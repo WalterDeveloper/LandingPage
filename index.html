@@ -368,6 +368,27 @@ echo $element;
 echo $objArr->age; 
 
 
+class Car {
+
+  //propertiesy
+
+  public $color;
+  public $model;
+  public $size;
+
+//Methods
+  public function __construct($color, $model,$size) 
+  {
+    $this->color = $color;
+    $this->model = $model;
+    $this->size = $size;
+  }
+  public function message()
+   {
+    return "My car is a " . $this->color . " " . $this->model . "!";
+  }
+}
+
 #Loop Through an Associative Array
 $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
 
